@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opere di Giuseppe Ungaretti</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Times New Roman", Times, serif; 
+            font-style: italic;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+
+        #menu div {
+            margin: 0 10px;
+        }
+
+        #menu div a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #menu div a:hover {
+            background-color: #555;
+        }
+        #opere-content {
+            padding: 50px;
+            text-align: left; 
+        }
+
+        #opere-content h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #opere-content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .poesia {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center; 
+        }
+
+        .poesia h3 {
+            font-size: 24px;
+            color: #333;
+            margin-right: 20px;
+        }
+
+        .poesia p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .poesia img {
+            width: 350px; 
+            height: auto;
+            margin-left: auto; 
+            margin-right: 380px; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .poesia .immagine-fratelli {
+            margin-left: 20px; 
+            margin-left: auto; 
+            margin-right: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Opere di Giuseppe Ungaretti</h1>
+        <div id="menu">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="opere.html">Opere</a></div>
+            <div><a href="biografia.html">Biografia</a></div>
+            <div><a href="approfondimento.html">Approfondimento</a></div>
+            <div><a href="fonti.html">Fonti</a></div>
+        </div>
+    </header>
+    <main>
+        <section id="opere-content">
+            <h2>Opere di Giuseppe Ungaretti</h2>
+            <p><strong>OPERE</strong></p>
+            <p>La sua poesia è nota per la sua brevità, la sua intensità emotiva e la sua capacità di catturare momenti di esperienza umana in modo essenziale. Uno dei tratti distintivi dello stile di Ungaretti è l'uso della parola ridotta all'essenziale, con una ricerca costante di precisione e di immediatezza nell'espressione dei sentimenti. La sua poesia spesso riflette le esperienze personali dell'autore, come ad esempio la partecipazione alla Prima Guerra Mondiale, durante la quale Ungaretti servì come soldato. La guerra ebbe un profondo impatto sulla sua vita e sulla sua poetica, portandolo a riflettere sulla fragilità dell'esistenza umana e sulla ricerca di significato in un mondo segnato dalla sofferenza e dalla tragedia</p>
+        
+            <div class="poesia">
+                <h3 onmouseover="cambiaColoreTesto(this)">Veglia</h3>
+                <p>
+                    "Veglia o su la veduta, o su l'udito,<br>
+                    È l'arte nostra, o fatta nostra, sola,<br>
+                    Che ti fa tuo in un delir di luce<br>
+                    E di colore, e del pensier che vola,<br>
+                    Il viso, il suono e il sogno, il paradiso."
+                </p>
+                <img src="img/veglia.jpg" alt="Veglia">
+            </div>
+            <div class="poesia">
+                <h3 onmouseover="cambiaColoreTesto(this)"> Fratelli</h3>
+                <p>
+                    "Fratelli, in mezzo a una strada<br>
+                    Come foglie morte. Eravamo soli,<br>
+                    Soli come foglie secche nel vento,<br>
+                    Sotto il cielo estivo di Parigi,<br>
+                    E l'unica parola era: Addio.<br>
+                    Ma nemmeno questo. Niente più."
+                </p>
+                <div class="immagine-fratelli">
+                    <img src="img/fratelli.jpg" alt="Fratelli">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Giuseppe Ungaretti - Poeta Italiano</p>
+    </footer>
+    <script>
+        function cambiaColoreTesto(elemento) {
+            elemento.style.color = "red";
+        }
+    </script>
+</body>
+</html>

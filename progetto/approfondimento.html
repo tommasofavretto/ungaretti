@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approfondimento su Giuseppe Ungaretti</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; 
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+
+        #menu div {
+            margin: 0 10px;
+        }
+
+        #menu div a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #menu div a:hover {
+            background-color: #555;
+        }
+        #approfondimento-content {
+            padding: 50px;
+            text-align: left;
+        }
+
+        #approfondimento-content h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+        }
+
+        #approfondimento-content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        #approfondimento-content p strong {
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #link-image {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #link-image a img {
+            width: 800px;
+            height: auto;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        #link-image img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Approfondimento su Giuseppe Ungaretti</h1>
+        <div id="menu">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="opere.html">Opere</a></div>
+            <div><a href="biografia.html">Biografia</a></div>
+            <div><a href="approfondimento.html">Approfondimento</a></div>
+            <div><a href="fonti.html">Fonti</a></div>
+        </div>
+    </header>
+    <main>
+        <section id="approfondimento-content">
+            <h2>Intervista del 1961</h2>
+            <p>
+                Nell'intervista del 1961, Giuseppe Ungaretti probabilmente ha condiviso dettagli sulla sua vita personale, compresa la sua infanzia e la sua formazione. Potrebbe aver parlato delle influenze letterarie e culturali che hanno plasmato il suo stile poetico distintivo, citando autori, opere o movimenti artistici che lo hanno ispirato. Ungaretti potrebbe aver discusso del contesto storico e sociale in cui ha vissuto e lavorato, offrendo una prospettiva personale su eventi significativi del suo tempo.
+
+Inoltre, potrebbe aver riflettuto sulle tematiche ricorrenti nella sua poesia, come l'amore, la guerra, la morte, la spiritualità o la natura, e su come queste tematiche si sono evolute nel corso della sua carriera. L'intervista potrebbe anche aver affrontato il suo processo creativo, le sue tecniche di scrittura e le sfide che ha incontrato nel dare forma alle sue idee poetiche.
+
+Ungaretti potrebbe anche aver condiviso le sue opinioni sulla poesia in generale, sulla sua importanza nella società e sul ruolo dell'artista nel mondo contemporaneo. Infine, potrebbe aver parlato dei suoi progetti futuri o delle sue speranze per il suo lavoro e per il futuro della poesia.
+            </p>
+            <p>
+             <strong>CLICCA SULL'IMMAGINE PER VEDERE L'INTERVISTA</strong>   
+            </p>
+            <div id="link-image">
+                <a href="https://www.youtube.com/watch?v=wFXMBFNQYTg">
+                    <img src="img/intervista.jpg">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Giuseppe Ungaretti - Poeta Italiano</p>
+    </footer>
+    <script>
+        const paragraphs = document.querySelectorAll('h2');
+
+        paragraphs.forEach(paragraph => {
+            paragraph.addEventListener('mouseover', () => {
+                paragraph.style.transform = 'scale(1.1)';
+            });
+
+            paragraph.addEventListener('mouseout', () => {
+                paragraph.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

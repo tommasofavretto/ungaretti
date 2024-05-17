@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonti su Giuseppe Ungaretti</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+
+        #menu div {
+            margin: 0 10px;
+        }
+
+        #menu div a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #menu div a:hover {
+            background-color: #555;
+        }
+
+        #fonti-content {
+            padding: 50px;
+            text-align: left;
+        }
+
+        #fonti-content h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        #fonti-content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        #fonti-content p strong {
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #date {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #images {
+            display: flex;
+            justify-content: left;
+            margin-top: 20px;
+        }
+
+        #images img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fonti su Giuseppe Ungaretti</h1>
+        <div id="menu">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="opere.html">Opere</a></div>
+            <div><a href="biografia.html">Biografia</a></div>
+            <div><a href="approfondimento.html">Approfondimento</a></div>
+            <div><a href="fonti.html">Fonti</a></div>
+        </div>
+    </header>
+    <main>
+        <section id="fonti-content">
+            <h2>Fonti Utilizzate</h2>
+            <p>
+                Le seguenti fonti sono state utilizzate per raccogliere informazioni su Giuseppe Ungaretti:
+            </p>
+                <h1>Wikipedia: <a href="https://it.wikipedia.org/wiki/Giuseppe_Ungaretti">Giuseppe Ungaretti<br></a>
+                Libro di testo di italiano: I CLASSICI NOSTRI CONTEMPORANEI</h1>
+                <div id="images">
+                    <img src="img/libro.jpg" >
+                </div>
+            <div id="date"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Giuseppe Ungaretti - Poeta Italiano</p>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('date').innerHTML = "DATA: " + currentDate.toLocaleDateString('it-IT', options);
+    </script>
+</body>
+</html>
